@@ -1,0 +1,25 @@
+body{
+    overflow-x: hidden;
+}
+.home{
+    margin-top: 5.5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+.home img{
+    width: 100%;
+}
+.home div{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.home div img{
+    width: 30%;
+}
+@media (max-width: 992px){
+    .home{
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    }
+}

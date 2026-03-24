@@ -1,0 +1,90 @@
+.overlay{
+  position: fixed;
+  inset:0;
+  min-width: 100%;
+  background: rgba(0,0,0,0.55);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:999;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.TbXboxX{
+  position: absolute;
+  right: 10px;
+  font-size: 25px;
+  color: black;
+}
+.modal{
+  max-width:400px;
+  background:white;
+  padding:30px;
+  border-radius:18px;
+  text-align:center;
+  align-items: center;
+  position:relative;
+  animation:pop .25s ease;
+}
+
+@keyframes pop{
+  from{ transform:scale(.8); opacity:0 }
+  to{ transform:scale(1); opacity:1 }
+}
+
+.modal img{
+  width: 150px;
+  height: 50px;
+}
+
+.back{
+  position:absolute;
+  right:20px;
+  top:20px;
+  cursor:pointer;
+  font-size:22px;
+  color: black;
+}
+
+.inputBox{
+  display:flex;
+  border:1px solid #ddd;
+  padding:12px;
+  border-radius:10px;
+  margin:20px 0;
+}
+
+.inputBox input{
+  border:none;
+  outline:none;
+  flex:1;
+  margin-left:10px;
+}
+
+.continue{
+  width:100%;
+  padding:14px;
+  border:1px solid #ccc;
+  border-radius:12px;
+  background:#929292;
+  color: white;
+  font-weight:bold;
+}
+button:hover{
+  border: 1px solid #ccc;
+  color: black;
+  background:white;
+}
+@media (max-width: 992px){
+    
+    .modal{
+        max-width:400px;
+        display: flex;
+        flex-direction: column;
+    }
+    .continue{
+      width: 350px;
+    }
+    .inputBox span{
+      width: 30px;
+    }
+}

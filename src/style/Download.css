@@ -1,0 +1,49 @@
+.download{
+    display: flex;
+    width: 90%;
+    background-color: rgb(249, 185, 64);
+    border-radius: 10px;
+    margin: 2rem auto;
+    padding: 2rem 0;
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.download div{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: auto;
+}
+.download .down{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0;
+}
+.download p{
+    font-size: clamp(16px, 4vw, 30px);
+    font-weight: 600;
+    margin: 1rem;
+}
+.download span{
+    color: rgb(56, 55, 55);
+    font-size: clamp(16px, 2vw, 20px);
+    font-weight: 600;
+    margin: 1rem;
+}
+img{
+    width: 30%;
+    cursor: pointer;
+}
+.banner{
+    width: 60%;
+    height: 80%;
+    margin: 0 auto;
+}
+@media (max-width: 768px){
+    .download{
+        flex-flow: wrap;
+        flex-wrap: wrap-reverse;
+    }
+}

@@ -1,0 +1,82 @@
+.location{
+    position: fixed;
+    inset:0;
+    min-width: 100%;
+    background: rgba(0,0,0,0.55);
+    display:flex;
+    justify-content:start;
+    align-items: start;
+    z-index:999;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.location_main{
+    max-width:350px;
+    background:white;
+    padding:30px;
+    left: 15%;
+    top: 15%;
+    border-radius:18px;
+    text-align:center;
+    align-items: center;
+    position:relative;
+    animation:pope .25s ease;
+}
+@keyframes pope{
+  from{ transform:scale(.8); opacity:0 }
+  to{ transform:scale(1); opacity:1 }
+}
+.TbXbox{
+  position: absolute;
+  right: 10px;
+  font-size: 25px;
+  color: black;
+}
+.location_modal{
+    display: flex;
+    margin: 15px 0;
+    min-width: 100%;
+    align-items: center;
+}
+.location_modal span{
+    border: 1px solid gray;
+    max-width: 20px;
+    max-height: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 13px;
+    margin: 0 10px;
+}
+.location_modal button{
+    height: 40px;
+    width: 36%;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+.location_modal input{
+    height: 33px;
+    width: 45%;
+    border: 1px solid gray;
+    outline: none;
+    border-radius: 5px;
+    box-shadow:
+    1px 0px 3px 3px rgba(115, 157, 230, 0.4),
+    1px 0px 3px 3px rgba(155, 241, 242, 0.4);
+}
+.location_modal button:hover{
+    color: green;
+}
+.location_main p{
+  padding: 10px 0;
+}
+@media (max-width: 450px){
+.location_main{
+    left: 10px;
+    top: 150px;
+}
+.location_modal span{
+    margin: 0 5px;
+}
+}

@@ -1,0 +1,48 @@
+.productcard h4{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+padding: 0 1rem;
+margin: 0;
+font-size: 1.3rem;
+color: rgb(38, 38, 38);
+display: none;
+}
+.productcard .card{
+    display: flex;
+    flex-flow: wrap;
+    gap: 2rem;
+    margin: 0 1rem;
+    padding: 1rem 0;
+    color: rgb(38, 38, 38);
+    text-align: center;
+}
+.productcard .products{
+    background: #eef1f5;
+    border-radius: 16px;
+    flex-grow: 1;
+    flex-basis: 100;
+}
+.productcard .products:hover{
+     transform: translateY(-6px);
+}
+.productcard img:hover{
+    transform: scale(1.1);
+}
+.productcard img{
+    width: 90px;
+    height: 90px;
+    border-radius: 30px;
+    padding-top: 10px;
+    object-fit: contain;
+}
+.productcard p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: .8rem;
+    text-align: center;
+    width: 85px;
+    margin: auto;
+}
+@media (max-width: 768px){
+    h4{
+        display: flex;
+    }
+}

@@ -1,0 +1,226 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    border-bottom: 1.5px solid rgb(226, 226, 226);
+    z-index: 100;
+}
+.title{
+    margin: auto;
+}
+.title img{
+    width: 150px;
+    height: 50px;
+}
+.title img:hover{
+    transform: scale(1.05);
+}
+.nav{
+    border-left:  1.5px solid rgb(226, 226, 226);
+    padding: 1rem;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.address{
+    width: 25%;
+    margin-right: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.address p{
+    font-size: 17px;
+    font-weight: 600;
+    margin: .5rem 0;
+    text-align: start;
+}
+.address span{
+    color:  rgb(136, 136, 136);
+    width: 240px;
+    text-align: start;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.search{
+    width: 50%;
+    height: 7vh;
+    background-color: rgb(228, 239, 243);
+    margin: auto;
+    display: flex;
+    justify-content: start;
+    border-radius: 10px;
+}
+.search input{
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(228, 239, 243);
+    border: none;
+    outline: none;
+}
+.search .icon{
+    padding-left: 1rem;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+}
+.profile{
+    display: none;
+    cursor: pointer;
+}
+.login{
+    width: 15%;
+    margin: auto;
+}
+.login a{
+    font-size: 20px;
+    text-decoration: none;
+    outline: none;
+    color: rgb(118, 117, 117);;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cart{
+    display: flex;
+    width: 12%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    background-color: rgb(226, 226, 226);
+    border-radius: 10px;
+}
+.cart .nav-link{
+    margin: 0;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    gap: .4rem;
+    font-weight: 600;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    text-decoration: none;
+    padding: 1rem .5rem;
+}
+.cart .nav-links{
+    background-color: green;
+    font-weight: 700;
+    font-size: 15px;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: .5rem;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cart .icon{
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    color: black;
+}
+.checkout_hidden{
+    display: none;
+    position: fixed;
+    width: 97%;
+    left: 1.5%;
+    bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: green;
+    border-radius: 10px;
+
+}
+.checkout_hidden span{
+   display: flex;
+   align-items: center;
+   font-size: 19px;
+   margin: 0 1rem;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: white;
+   font-weight: 400;
+}
+.checkout_hidden span .right_icon{
+    margin-top: 4px;
+}
+.checkout_hidden p{
+    font-size: 17px;
+    margin: 0;
+    font-weight: 600;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+}
+.checkout_hidden p .bsicon{
+    font-size: 24px;
+    padding: 10px;
+    margin: 0 1rem;
+    border-radius: 10px;
+}
+.checkout_hidden:hover .bsicon{
+    background-color: rgb(160, 247, 164);
+}
+@media (max-width: 1200px){
+    .cart .nav-link{
+        gap: .1rem;
+        padding: 6px;
+    }
+}
+@media (max-width: 992px){
+    .title{
+        display: none;
+    }
+    .nav{
+        border: none;
+        flex-direction: column;
+        width: 100%;
+        height: 120px;
+        padding: 2px;
+    }
+    .address{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+    .address span{
+        width: 100%;
+        text-align: start;
+    }
+    .address div{
+        width: 80%;
+        text-align: start;
+    }
+    .profile{
+        display: flex;
+        margin: auto 0;
+        width: 35px;
+        height: 35px;
+    }
+    .search{
+        width: 100%;
+        min-height: 40px;
+    }
+    .cart{
+        display: none;
+    }
+    .login{
+        display: none;
+    }
+    .checkout_hidden{
+        display: flex;
+    }
+    
+}
