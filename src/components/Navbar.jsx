@@ -15,7 +15,7 @@ import { CartContext } from "../context/CartContext";
 import '../style/NavBar.css'
 import '../style/Login.css'
 
-import logo from '../assets/Product/Log.png'
+import logo from '../assets/Product/log.png'
 import { bestSelling } from "../data/bestSelling";
 import { justArrived } from "../data/justArrived";
 import { mostPopular } from "../data/mostPopular";
