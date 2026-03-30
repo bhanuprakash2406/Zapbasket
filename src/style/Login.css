@@ -82,7 +82,7 @@ button:hover{
         flex-direction: column;
     }
     .continue{
-      width: 350px;
+      width: 90%;
     }
     .inputBox span{
       width: 30px;
